@@ -1,25 +1,29 @@
 PbCounter
 =========
 
-PbCounter is a small Windows utility that counts how many times each mouse button and each keyboard key is pressed. With these statistics it does three things:
+PbCounter is a small Windows utility that counts how many times each mouse button and each keyboard key is pressed. 
+With these statistics it does three things:
 
  - Display the counters, obviously :)
  - Create an heat map to put in evidence the most used keys on your keyboard
  - Upload the statistics at regular interval to a web page of your choice (an example PHP script here or source)
 
-It is purposely compatible with scripts made for Mousotron (request format below). It takes less than 3MB of ram and uses very little CPU.
+It is purposely compatible with scripts made for Mousotron[1]. It takes less than 3MB of ram and uses very little CPU.
 
 On first run the application will create an ini file with default settings.
 
-To make PbCounter run on windows startup place a shortcut to counter.exe in the Startup folder of your start menu.
+To make PbCounter run on windows startup place a shortcut to counter.exe in the Startup folder of your Start Menu.
  
 Here are some settings you may want to change (Important to quit PbCounter before editing the ini file!):
  - computername: This is used when the script sends statistics over the internet. By default it is your computer name.
  - updateinterval: This is the time in second between web statistics update.
- - updateenabled: Wether or not to use auto web statistics upload (if you set this to 0 you can still press the Update Now button to send your stats)
- - updateurl: the url of the remote statistics script
+ - updateenabled: Whether or not to use periodic web statistics upload (if you set this to 0 you can still press 
+   the Update Now button to send your stats)
+ - updateurl: The url of the remote statistics script
 
-These are the variables sent during the GET request:
+
+HTTP Web Update Format
+----------------------
  - al = ComputerName
  - reset = last time the counters were reset
  - lb = left clicks
@@ -28,6 +32,9 @@ These are the variables sent during the GET request:
  - eb = extra button clicks
  - scr = wheel scrolls
  - ks = keystrokes
+
+
+1. http://www.blacksunsoftware.com/mousotron.html
 
 
 Limitations

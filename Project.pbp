@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://www.purebasic.com/namespace" version="1.0" creator="PureBasic 5.70 LTS (Windows - x64)">
+  <section name="config">
+    <options closefiles="1" openmode="1" name="PbCounter"/>
+  </section>
+  <section name="data">
+    <explorer view="..\..\" pattern="0"/>
+    <log show="1"/>
+    <lastopen date="2019-11-27 22:17" user="alex" host="ALEX-THINK"/>
+  </section>
+  <section name="files">
+    <file name="Keyboard.pbi">
+      <config load="1" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="bd5979a7300f79a2198ad49ab5e15b16"/>
+    </file>
+    <file name="PbCounter.pb">
+      <config load="1" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="f38e9e9792674a84469d9c37e7f20204"/>
+    </file>
+    <file name="README.md">
+      <config load="1" scan="0" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="705e971eef7a361a1366064c3d472bb5"/>
+    </file>
+  </section>
+  <section name="targets">
+    <target name="Default Target" enabled="1" default="1">
+      <inputfile value="PbCounter.pb"/>
+      <outputfile value="build\counter.exe"/>
+      <compiler version="PureBasic 5.70 LTS (Windows - x86)"/>
+      <executable value="build\counter.exe"/>
+      <options thread="1" xpskin="1" debug="1"/>
+      <purifier enable="1"/>
+      <icon enable="1">PbCounter.ico</icon>
+      <format exe="default" cpu="5"/>
+      <buildcount enable="1" value="21"/>
+    </target>
+  </section>
+</project>
